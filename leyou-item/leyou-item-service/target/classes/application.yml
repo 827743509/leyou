@@ -17,3 +17,4 @@ eureka:
     lease-expiration-duration-in-seconds: 15 #过期时间
 mybatis:
   type-aliases-package: com.leyou.item.pojo
+  mapper-locations: classpath:/mappers/*.xml
