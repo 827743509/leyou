@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface CategoryService {
     public List<Category> getCategoryById(Long id);
+
+    List<String> queryNamesByIds(List<Long> ids);
 }

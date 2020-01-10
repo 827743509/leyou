@@ -17,6 +17,8 @@ import java.util.List;
 public class CategoryController {
     @Autowired
    private CategoryService categoryService;
+    //根据分类父节点查询分类子节点
+
     @GetMapping("list")
 public ResponseEntity<List<Category>> getCategoryById(@RequestParam("pid") Long id){
  if(id==null||id<0){
@@ -27,5 +29,14 @@ public ResponseEntity<List<Category>> getCategoryById(@RequestParam("pid") Long 
            return  ResponseEntity.notFound().build();
        }
        return ResponseEntity.ok(list);
+    }
+    //根据分类id集合查询分类名
+    @GetMapping
+    public  ResponseEntity<List<String>> queryNamesByIds(@RequestParam("ids") List<Long> ids){
+        List<String> list = categoryService.queryNamesByIds(ids);
+        if(CollectionUtils.isEmpty(list)){
+            return  ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(list);
     }
 }

@@ -31,4 +31,14 @@ public class BrandServiceImpl implements  BrandService {
         brandMapper.insertSelective(brand);
         cids.forEach(cid->brandMapper.insertBrandAndCategory(brand.getId(),cid));
     }
+
+    public List<Brand> queryBrandsByCid(Long cid) {
+
+        return  brandMapper.selectBrandsByCid(cid);
+    }
+
+
+    public Brand queryBrandById(Long id) {
+        return brandMapper.selectByPrimaryKey(id);
+    }
 }
