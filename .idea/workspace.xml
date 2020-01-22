@@ -1,68 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d73711bf-2cbe-45ce-8823-4337ce8b7b90" name="Default Changelist" comment="改造了文件上传">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-gateway/.rebel-remote.xml.bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-gateway/src/main/resources/rebel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-item/leyou-item-interface/src/main/java/com/leyou/item/api/BrandApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-item/leyou-item-interface/src/main/java/com/leyou/item/api/CategoryApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-item/leyou-item-interface/src/main/java/com/leyou/item/api/GoodsApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-item/leyou-item-interface/src/main/java/com/leyou/item/api/SpecificationApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-item/leyou-item-interface/src/main/java/com/leyou/item/bo/SpuBo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-item/leyou-item-interface/src/main/java/com/leyou/item/pojo/Sku.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-item/leyou-item-interface/src/main/java/com/leyou/item/pojo/SpecGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-item/leyou-item-interface/src/main/java/com/leyou/item/pojo/SpecParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-item/leyou-item-interface/src/main/java/com/leyou/item/pojo/Spu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-item/leyou-item-interface/src/main/java/com/leyou/item/pojo/SpuDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-item/leyou-item-interface/src/main/java/com/leyou/item/pojo/Stock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/controller/GoodsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/controller/SpecificationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/mapper/SkuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/mapper/SpecGroupMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/mapper/SpecParamMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/mapper/SpuDetailMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/mapper/SpuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/mapper/StockMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/service/GoodsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/service/GoodsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/service/SpecificationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/service/SpecificationServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-search/leyou-search.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-search/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-search/src/main/java/com/leyou/LeyouSearchApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-search/src/main/java/com/leyou/search/client/BrandClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-search/src/main/java/com/leyou/search/client/CategoryClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-search/src/main/java/com/leyou/search/client/GoodsClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-search/src/main/java/com/leyou/search/client/SpecificationClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-search/src/main/java/com/leyou/search/controller/SearchController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-search/src/main/java/com/leyou/search/pojo/Goods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-search/src/main/java/com/leyou/search/pojo/SearchRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-search/src/main/java/com/leyou/search/repository/GoodsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-search/src/main/java/com/leyou/search/service/SearchService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-search/src/main/java/com/leyou/search/service/SearchServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-search/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-search/src/test/java/com/leyou/elasticsearch/test/ElasticsearchTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leyou-upload/src/main/resources/rebel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+    <list default="true" id="d73711bf-2cbe-45ce-8823-4337ce8b7b90" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/leyou-goods-web/leyou-goods-web.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leyou-goods-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leyou-goods-web/src/main/java/com/leyou/LeyouGoodsWebApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leyou-goods-web/src/main/java/com/leyou/goods/client/BrandClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leyou-goods-web/src/main/java/com/leyou/goods/client/CategoryClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leyou-goods-web/src/main/java/com/leyou/goods/client/GoodsClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leyou-goods-web/src/main/java/com/leyou/goods/client/SpecificationClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leyou-goods-web/src/main/java/com/leyou/goods/controller/GoodsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leyou-goods-web/src/main/java/com/leyou/goods/listener/GoodsListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leyou-goods-web/src/main/java/com/leyou/goods/service/GoodsHtmlService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leyou-goods-web/src/main/java/com/leyou/goods/service/GoodsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leyou-goods-web/src/main/java/com/leyou/goods/service/GoodsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leyou-goods-web/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leyou-goods-web/src/main/resources/templates/item.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leyou-search/src/main/java/com/leyou/search/listener/GoodsListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leyou-search/src/main/java/com/leyou/search/pojo/SearchResult.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-gateway/leyou-gateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-gateway/leyou-gateway.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-gateway/src/main/java/com/leyou/config/LeyouCorsConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-gateway/src/main/java/com/leyou/config/LeyouCorsConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-gateway/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-gateway/target/classes/com/leyou/config/LeyouCorsConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-gateway/target/classes/com/leyou/config/LeyouCorsConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-item/leyou-item-interface/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-item/leyou-item-interface/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/controller/BrandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/controller/BrandController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/controller/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/mapper/BrandMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/mapper/BrandMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/service/BrandService.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/service/BrandService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/service/BrandServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/service/BrandServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leyou-item/leyou-item-interface/src/main/java/com/leyou/item/api/GoodsApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-item/leyou-item-interface/src/main/java/com/leyou/item/api/GoodsApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leyou-item/leyou-item-interface/src/main/java/com/leyou/item/api/SpecificationApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-item/leyou-item-interface/src/main/java/com/leyou/item/api/SpecificationApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leyou-item/leyou-item-interface/src/main/java/com/leyou/item/pojo/SpecGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-item/leyou-item-interface/src/main/java/com/leyou/item/pojo/SpecGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leyou-item/leyou-item-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/controller/GoodsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/controller/SpecificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/controller/SpecificationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/service/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/service/CategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leyou-upload/leyou-upload.iml" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-upload/leyou-upload.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/service/GoodsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/service/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/service/GoodsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/service/SpecificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/service/SpecificationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/service/SpecificationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/service/SpecificationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leyou-item/leyou-item-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-item/leyou-item-service/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leyou-search/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-search/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leyou-search/src/main/java/com/leyou/search/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-search/src/main/java/com/leyou/search/controller/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leyou-search/src/main/java/com/leyou/search/pojo/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-search/src/main/java/com/leyou/search/pojo/Goods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leyou-search/src/main/java/com/leyou/search/pojo/SearchRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-search/src/main/java/com/leyou/search/pojo/SearchRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leyou-search/src/main/java/com/leyou/search/service/SearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-search/src/main/java/com/leyou/search/service/SearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leyou-search/src/main/java/com/leyou/search/service/SearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-search/src/main/java/com/leyou/search/service/SearchServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leyou-search/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-search/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leyou-search/src/test/java/com/leyou/elasticsearch/test/ElasticsearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-search/src/test/java/com/leyou/elasticsearch/test/ElasticsearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leyou-upload/src/main/java/com/leyou/upload/service/UploadServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/leyou-upload/src/main/java/com/leyou/upload/service/UploadServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -190,19 +170,21 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+    <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.AdvancedConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\ideaworkspace\leyou\leyou-item" />
-    </key>
     <key name="OPEN_URL_DIALOG">
       <recent name="https://github.com/wenpanwenpan/leyou-portal.git" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\ideaworkspace\leyou\leyou-item" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.leyou.upload.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\ideaworkspace\leyou\leyou-goods-web\src\main\java\com\leyou\goods\client" />
+      <recent name="E:\ideaworkspace\leyou\leyou-goods-web\src\main\resources\templates" />
       <recent name="E:\ideaworkspace\leyou\leyou-item\leyou-item-interface\src\main\java\com\leyou\item\api" />
     </key>
   </component>
@@ -213,7 +195,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ElasticsearchTest.save">
+  <component name="RunManager" selected="JUnit.ElasticsearchTest.testStreamMap">
     <configuration name="ElasticsearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="leyou-search" />
       <extension name="coverage">
@@ -261,17 +243,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FastDFSTest.testUpload" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="leyou-upload" />
+    <configuration name="ElasticsearchTest.testStreamMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="leyou-search" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leyou.upload.*" />
+          <option name="PATTERN" value="com.leyou.elasticsearch.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.leyou.upload" />
-      <option name="MAIN_CLASS_NAME" value="com.leyou.upload.FastDFSTest" />
-      <option name="METHOD_NAME" value="testUpload" />
+      <option name="PACKAGE_NAME" value="com.leyou.elasticsearch.test" />
+      <option name="MAIN_CLASS_NAME" value="com.leyou.elasticsearch.test.ElasticsearchTest" />
+      <option name="METHOD_NAME" value="testStreamMap" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -325,6 +307,14 @@
     <configuration name="LouyouRegistryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="leyou-registry" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.LouyouRegistryApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.leyou.LeyouGoodsWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="leyou-goods-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.leyou.LeyouGoodsWebApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -426,24 +416,25 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.FastDFSTest.testUpload" />
       <item itemvalue="JUnit.FastDFSTest.testUploadAndCreateThumb" />
       <item itemvalue="JUnit.ElasticsearchTest.save" />
       <item itemvalue="JUnit.ElasticsearchTest" />
       <item itemvalue="JUnit.ElasticsearchTest.test" />
+      <item itemvalue="Spring Boot.com.leyou.LeyouGoodsWebApplication" />
       <item itemvalue="Spring Boot.LeyouUploadApplication" />
       <item itemvalue="Spring Boot.LeyouGatewayApplication" />
       <item itemvalue="Spring Boot.LouyouRegistryApplication" />
       <item itemvalue="Spring Boot.LeyouItemApplication" />
       <item itemvalue="Spring Boot.LeyouSearchApplication" />
+      <item itemvalue="JUnit.ElasticsearchTest.testStreamMap" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ElasticsearchTest.testStreamMap" />
         <item itemvalue="JUnit.ElasticsearchTest.save" />
         <item itemvalue="JUnit.ElasticsearchTest" />
         <item itemvalue="JUnit.ElasticsearchTest.test" />
         <item itemvalue="JUnit.FastDFSTest.testUploadAndCreateThumb" />
-        <item itemvalue="JUnit.FastDFSTest.testUpload" />
       </list>
     </recent_temporary>
   </component>
@@ -451,7 +442,7 @@
     <option name="viewStates">
       <list>
         <serviceView>
-          <option name="contentProportion" value="0.23511215" />
+          <option name="contentProportion" value="0.27996907" />
           <treeState>
             <expand>
               <path>
@@ -462,11 +453,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Not Started" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -507,6 +493,30 @@
       <workItem from="1578467012209" duration="1542000" />
       <workItem from="1578546027910" duration="28780000" />
       <workItem from="1578619577482" duration="5505000" />
+      <workItem from="1578629075582" duration="2259000" />
+      <workItem from="1578659731851" duration="62000" />
+      <workItem from="1578659830650" duration="4065000" />
+      <workItem from="1578711450130" duration="255000" />
+      <workItem from="1578715101882" duration="24000" />
+      <workItem from="1578715145965" duration="16000" />
+      <workItem from="1578715891883" duration="1716000" />
+      <workItem from="1578815765907" duration="1965000" />
+      <workItem from="1578822641318" duration="70000" />
+      <workItem from="1578822761705" duration="3000" />
+      <workItem from="1578832978220" duration="20000" />
+      <workItem from="1578833251863" duration="82000" />
+      <workItem from="1578837226832" duration="376000" />
+      <workItem from="1578905544581" duration="594000" />
+      <workItem from="1579164927176" duration="4491000" />
+      <workItem from="1579171096163" duration="3840000" />
+      <workItem from="1579182426348" duration="185000" />
+      <workItem from="1579225014062" duration="21074000" />
+      <workItem from="1579336390672" duration="12573000" />
+      <workItem from="1579397391251" duration="5859000" />
+      <workItem from="1579514963935" duration="479000" />
+      <workItem from="1579580727681" duration="4697000" />
+      <workItem from="1579586329458" duration="11411000" />
+      <workItem from="1579664069407" duration="10727000" />
     </task>
     <task id="LOCAL-00001" summary="第一次上传">
       <created>1577794652395</created>
@@ -536,7 +546,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578303037272</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="前台页面有问题 不做了">
+      <created>1578629257402</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1578629257402</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,33 +565,38 @@
     <MESSAGE value="第二次上传" />
     <MESSAGE value="完成了文件上传" />
     <MESSAGE value="改造了文件上传" />
-    <option name="LAST_COMMIT_MESSAGE" value="改造了文件上传" />
+    <MESSAGE value="前台页面有问题 不做了" />
+    <option name="LAST_COMMIT_MESSAGE" value="前台页面有问题 不做了" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="21" key="#Notifications" timestamp="1578115302581">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="21" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1578115302581" />
-    <state x="275" y="21" key="#Project_Structure" timestamp="1578129381796">
+    <state x="275" y="21" key="#Project_Structure" timestamp="1579336939951">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="21" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1578129381796" />
+    <state x="275" y="21" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1579336939951" />
     <state x="316" y="21" key="#Tomcat_Server" timestamp="1578051477670">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="316" y="21" key="#Tomcat_Server/0.0.1366.728@0.0.1366.728" timestamp="1578051477670" />
-    <state x="64" y="11" width="1199" height="692" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578369592790">
+    <state x="228" y="118" key="#com.intellij.debugger.streams.ui.EvaluationAwareTraceWindow" timestamp="1579348530084">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="64" y="11" width="1199" height="692" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1578369592790" />
-    <state x="579" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1578581250537">
+    <state x="228" y="118" key="#com.intellij.debugger.streams.ui.EvaluationAwareTraceWindow/0.0.1366.728@0.0.1366.728" timestamp="1579348530084" />
+    <state x="64" y="11" width="1199" height="692" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579417158830">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="579" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1578581250537" />
-    <state x="453" y="146" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1578138355043">
+    <state x="64" y="11" width="1199" height="692" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1579417158830" />
+    <state x="579" y="79" key="#com.intellij.ide.util.MemberChooser" timestamp="1579683017585">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="453" y="146" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1578138355043" />
+    <state x="579" y="79" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1579683017585" />
+    <state x="453" y="146" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1579417153010">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="453" y="146" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1579417153010" />
     <state x="488" y="288" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1578234121939">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -587,82 +609,82 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1578572403098" />
-    <state x="277" y="0" key="CommitChangelistDialog2" timestamp="1578303130289">
+    <state x="277" y="0" key="CommitChangelistDialog2" timestamp="1578629249203">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="277" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1578303130289" />
-    <state width="459" height="438" key="DebuggerActiveHint" timestamp="1578625140493">
+    <state x="277" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1578629249203" />
+    <state width="459" height="438" key="DebuggerActiveHint" timestamp="1579348891293">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="459" height="438" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1578625140493" />
+    <state width="459" height="438" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1579348891293" />
     <state x="122" y="54" key="DiffContextDialog" timestamp="1578040331530">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="122" y="54" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1578040331530" />
-    <state x="456" y="121" key="FileChooserDialogImpl" timestamp="1578622570967">
+    <state x="456" y="121" key="FileChooserDialogImpl" timestamp="1579514977220">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="456" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1578622570967" />
-    <state x="492" y="259" key="Github.CreateGistDialog" timestamp="1578104139570">
+    <state x="456" y="121" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1579514977220" />
+    <state x="492" y="259" key="Github.CreateGistDialog" timestamp="1579580923397">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="492" y="259" key="Github.CreateGistDialog/0.0.1366.728@0.0.1366.728" timestamp="1578104139570" />
-    <state width="976" height="185" key="GridCell.Tab.0.bottom" timestamp="1578628086389">
+    <state x="492" y="259" key="Github.CreateGistDialog/0.0.1366.728@0.0.1366.728" timestamp="1579580923397" />
+    <state width="930" height="256" key="GridCell.Tab.0.bottom" timestamp="1579689348775">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="976" height="185" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578628086389" />
-    <state width="976" height="185" key="GridCell.Tab.0.center" timestamp="1578628086389">
+    <state width="930" height="256" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579689348775" />
+    <state width="930" height="256" key="GridCell.Tab.0.center" timestamp="1579689348775">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="976" height="185" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1578628086389" />
-    <state width="976" height="185" key="GridCell.Tab.0.left" timestamp="1578628086389">
+    <state width="930" height="256" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1579689348775" />
+    <state width="930" height="256" key="GridCell.Tab.0.left" timestamp="1579689348775">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="976" height="185" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1578628086389" />
-    <state width="976" height="185" key="GridCell.Tab.0.right" timestamp="1578628086389">
+    <state width="930" height="256" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1579689348775" />
+    <state width="930" height="256" key="GridCell.Tab.0.right" timestamp="1579689348775">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="976" height="185" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1578628086389" />
-    <state width="976" height="185" key="GridCell.Tab.1.bottom" timestamp="1578628086389">
+    <state width="930" height="256" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1579689348775" />
+    <state width="930" height="256" key="GridCell.Tab.1.bottom" timestamp="1579689348775">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="976" height="185" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578628086389" />
-    <state width="976" height="185" key="GridCell.Tab.1.center" timestamp="1578628086389">
+    <state width="930" height="256" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579689348775" />
+    <state width="930" height="256" key="GridCell.Tab.1.center" timestamp="1579689348775">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="976" height="185" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1578628086389" />
-    <state width="976" height="185" key="GridCell.Tab.1.left" timestamp="1578628086389">
+    <state width="930" height="256" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1579689348775" />
+    <state width="930" height="256" key="GridCell.Tab.1.left" timestamp="1579689348775">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="976" height="185" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1578628086389" />
-    <state width="976" height="185" key="GridCell.Tab.1.right" timestamp="1578628086389">
+    <state width="930" height="256" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1579689348775" />
+    <state width="930" height="256" key="GridCell.Tab.1.right" timestamp="1579689348775">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="976" height="185" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1578628086389" />
-    <state width="976" height="245" key="GridCell.Tab.2.bottom" timestamp="1578625160281">
+    <state width="930" height="256" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1579689348775" />
+    <state width="887" height="225" key="GridCell.Tab.2.bottom" timestamp="1579687049747">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="976" height="245" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578625160281" />
-    <state width="976" height="245" key="GridCell.Tab.2.center" timestamp="1578625160281">
+    <state width="887" height="225" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579687049747" />
+    <state width="887" height="225" key="GridCell.Tab.2.center" timestamp="1579687049747">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="976" height="245" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1578625160281" />
-    <state width="976" height="245" key="GridCell.Tab.2.left" timestamp="1578625160281">
+    <state width="887" height="225" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1579687049747" />
+    <state width="887" height="225" key="GridCell.Tab.2.left" timestamp="1579687049747">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="976" height="245" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1578625160281" />
-    <state width="976" height="245" key="GridCell.Tab.2.right" timestamp="1578625160281">
+    <state width="887" height="225" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1579687049747" />
+    <state width="887" height="225" key="GridCell.Tab.2.right" timestamp="1579687049747">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="976" height="245" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1578625160281" />
+    <state width="887" height="225" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1579687049747" />
     <state width="220" height="477" key="HiddenNamespacesPopup" timestamp="1578369289699">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="220" height="477" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1578369289699" />
-    <state x="426" y="0" key="Maven.ArtifactSearchDialog" timestamp="1578568593441">
+    <state x="426" y="0" key="Maven.ArtifactSearchDialog" timestamp="1579679749887">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="426" y="0" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1578568593441" />
+    <state x="426" y="0" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1579679749887" />
     <state x="254" y="25" key="Registry" timestamp="1578050145060">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -671,34 +693,34 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="370" y="73" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1578040314255" />
-    <state x="185" y="0" width="997" height="728" key="SettingsEditor" timestamp="1578554856844">
+    <state x="42" y="0" width="997" height="728" key="SettingsEditor" timestamp="1578711726444">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="185" y="0" width="997" height="728" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1578554856844" />
-    <state x="338" y="121" key="Vcs.Push.Dialog.v2" timestamp="1578629147409">
+    <state x="42" y="0" width="997" height="728" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1578711726444" />
+    <state x="338" y="121" key="Vcs.Push.Dialog.v2" timestamp="1578629342930">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="338" y="121" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1578629147409" />
-    <state x="363" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1578232004721">
+    <state x="338" y="121" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1578629342930" />
+    <state x="363" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1579397394971">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="363" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1578232004721" />
+    <state x="363" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1579397394971" />
     <state x="475" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578620946356">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="475" y="280" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1578620946356" />
-    <state x="564" y="95" key="extract.method.dialog" timestamp="1578396820762">
+    <state x="564" y="95" key="extract.method.dialog" timestamp="1579680360531">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="564" y="95" key="extract.method.dialog/0.0.1366.728@0.0.1366.728" timestamp="1578396820762" />
+    <state x="564" y="95" key="extract.method.dialog/0.0.1366.728@0.0.1366.728" timestamp="1579680360531" />
     <state x="398" y="154" key="git4idea.merge.GitPullDialog" timestamp="1577797232124">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="398" y="154" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1577797232124" />
-    <state x="107" y="78" width="1259" height="618" key="new project wizard" timestamp="1578546285512">
+    <state x="107" y="45" width="1259" height="618" key="new project wizard" timestamp="1579407758386">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="107" y="78" width="1259" height="618" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1578546285512" />
+    <state x="107" y="45" width="1259" height="618" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1579407758386" />
     <state x="437" y="234" width="726" height="311" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1578128290170">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -707,18 +729,31 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="425" y="0" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1578058186507" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1578560189572">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1579680274250">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1578560189572" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1579680274250" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/leyou-search/src/main/java/com/leyou/search/controller/SearchController.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/leyou-search/src/main/java/com/leyou/search/service/SearchServiceImpl.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leyou-item/leyou-item-service/src/main/java/com/leyou/item/service/GoodsServiceImpl.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/leyou-search/src/test/java/com/leyou/elasticsearch/test/ElasticsearchTest.java</url>
+          <line>54</line>
+          <properties class="com.leyou.elasticsearch.test.ElasticsearchTest" method="testStreamMap">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

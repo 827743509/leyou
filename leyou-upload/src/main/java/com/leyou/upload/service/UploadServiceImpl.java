@@ -1,6 +1,5 @@
 package com.leyou.upload.service;
 
-import com.github.tobato.fastdfs.domain.StorePath;
 import com.github.tobato.fastdfs.domain.ThumbImageConfig;
 import com.github.tobato.fastdfs.service.FastFileStorageClient;
 import org.apache.commons.lang.StringUtils;
@@ -33,21 +32,21 @@ public class UploadServiceImpl implements  UploadService {
             if(bufferedImage==null){return  null;}
 
             String originalFilename = file.getOriginalFilename();
-              /*//生成图片路径并保存本地
+              //生成图片路径并保存本地
             String suffix= "."+StringUtils.substringAfterLast(originalFilename,".");
             SimpleDateFormat simpleDateFormat=new SimpleDateFormat("/yyyy/MM/dd/");
             String format = simpleDateFormat.format(new Date());
-            String dirPath="E:/leyouimage"+format;
+            String dirPath="E:\\leyou\\images"+format;
             File dirFile=new File(dirPath);
             if(!dirFile.exists()){
                 dirFile.mkdirs();
             }
             String  filePath=format+ UUID.randomUUID().toString()+suffix;
             file.transferTo(new File("E:/leyouimage"+filePath));
-            return "http://image.leyou.com"+filePath;*/
+            return "http://image.leyou.com"+filePath;
             //生成图片并保存fastDFS
-            StorePath storePath = this.storageClient.uploadFile(file.getInputStream(), file.getSize(), StringUtils.substringAfterLast(originalFilename, "."), null);
-            return  "http://image.leyou.com/"+storePath.getFullPath();
+         /*   StorePath storePath = this.storageClient.uploadFile(file.getInputStream(), file.getSize(), StringUtils.substringAfterLast(originalFilename, "."), null);
+            return  "http://image.leyou.com/"+storePath.getFullPath();*/
         } catch (IOException e) {
             e.printStackTrace();
             return  null;

@@ -24,7 +24,7 @@ public class Goods {
     private Date createTime;// 创建时间
     private List<Long> price;// 价格
     @Field(type = FieldType.Keyword, index = false)
-    private String skus;// sku信息的json结构
+    private String skus;// list<sku>信息的json结构
     private Map<String, Object> specs;// 可搜索的规格参数，key是参数名，值是参数值
 
     public Long getId() {

@@ -1,0 +1,21 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: goods-web
+  thymeleaf:
+    cache: false
+  rabbitmq:
+    host: 192.168.80.130
+    username: leyou
+    password: leyou
+    virtualHost: /leyou
+    template:
+      exchange: leyou.item.exchange
+  main:
+    allow-bean-definition-overriding: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+    registry-fetch-interval-seconds: 5

@@ -5,8 +5,9 @@ import com.leyou.item.pojo.Category;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
+
 @Service
 public class CategoryServiceImpl implements CategoryService {
     @Autowired
@@ -20,9 +21,10 @@ private CategoryMapper categoryMapper;
 
     @Override
     public List<String> queryNamesByIds(List<Long> ids) {
+       return  ids.stream().map(id -> {
+            return categoryMapper.selectByPrimaryKey(id).getName();
+        }).collect(Collectors.toList());
 
-        return Arrays.asList(categoryMapper.selectByPrimaryKey(ids.get(0)).getName(),
-                categoryMapper.selectByPrimaryKey(ids.get(1)).getName(),
-                categoryMapper.selectByPrimaryKey(ids.get(2)).getName());
+
     }
 }

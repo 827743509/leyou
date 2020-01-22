@@ -36,10 +36,9 @@ public class ElasticsearchTest {
         Integer rows=100;
       do {
           PageResult<SpuBo> result = goodsClient.querySpu(null, null, page, rows);
-          List<Goods> goodsList = result.getItems().stream().map(item -> {
+          List<Goods> goodsList = result.getItems().stream().map(spuBo -> {
               try {
-                  Goods goods = searchService.goodsBuilder(item);
-                  return goods;
+                  return searchService.goodsBuilder(spuBo);
               } catch (IOException e) {
                   e.printStackTrace();
                   return null;
@@ -47,10 +46,16 @@ public class ElasticsearchTest {
           }).collect(Collectors.toList());
           repository.saveAll(goodsList);
           page++;
-          rows = result.getTotal().intValue();
-      }while (rows<=100);
+          rows = result.getItems().size();
+      }while (rows==100);
 
 
     }
+    @Test
+public  void testStreamMap(){
+           String a="dasdsadsadasd";
 
+        System.out.println(a.getBytes()[0]);
+
+}
 }

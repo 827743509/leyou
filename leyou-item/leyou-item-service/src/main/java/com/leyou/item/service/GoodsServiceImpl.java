@@ -10,6 +10,8 @@ import com.leyou.item.pojo.Spu;
 import com.leyou.item.pojo.SpuDetail;
 import com.leyou.item.pojo.Stock;
 import org.apache.commons.lang.StringUtils;
+import org.springframework.amqp.AmqpException;
+import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -35,6 +37,8 @@ public class GoodsServiceImpl implements  GoodsService {
     private CategoryService categoryService;
     @Autowired
     private BrandMapper brandMapper;
+    @Autowired
+    private AmqpTemplate amqpTemplate;
     //商品新增
     @Transactional
     public void saveGoods(SpuBo spuBo) {
@@ -50,7 +54,39 @@ public class GoodsServiceImpl implements  GoodsService {
         spuDetail.setSpuId(spuBo.getId());
         spuDetailMapper.insertSelective(spuDetail);
         saveSkusAndStock(spuBo);
+        sendMsg("insert",spuBo.getId());
+    }
+    //修改商品的方法
+    @Transactional
+    public void updateGoods(SpuBo spuBo) {
+        //删除库存
+        Sku record=new Sku();
+        record.setSpuId(spuBo.getId());
+        List<Sku> skus = skuMapper.select(record);
+        skus.forEach(sku -> {
+            stockMapper.deleteByPrimaryKey(sku.getId());
+        });
+        //删除所有sku
+        skuMapper.delete(record);
+        //新增sku和库存
+        saveSkusAndStock(spuBo);
+        //更新spu
+        spuBo.setSaleable(null);
+        spuBo.setValid(null);
+        spuBo.setCreateTime(null);
+        spuBo.setLastUpdateTime(new Date());
+        spuMapper.updateByPrimaryKeySelective(spuBo);
+        //更新spudetail
+        spuDetailMapper.updateByPrimaryKeySelective(spuBo.getSpuDetail());
+        sendMsg("update",spuBo.getId());
 
+    }
+    private void sendMsg(String type,Long id) {
+        try {
+            amqpTemplate.convertAndSend("item."+type,id);
+        } catch (AmqpException e) {
+            e.printStackTrace();
+        }
     }
 
     private void saveSkusAndStock(SpuBo spuBo) {
@@ -87,31 +123,7 @@ public class GoodsServiceImpl implements  GoodsService {
         return skus;
     }
 
-    //修改商品的方法
-    @Transactional
-    public void updateGoods(SpuBo spuBo) {
-        //删除库存
-        Sku record=new Sku();
-        record.setSpuId(spuBo.getId());
-        List<Sku> skus = skuMapper.select(record);
-        skus.forEach(sku -> {
-          stockMapper.deleteByPrimaryKey(sku.getId());
-        });
-        //删除所有sku
-          skuMapper.delete(record);
-          //新增sku和库存
-          saveSkusAndStock(spuBo);
-          //更新spu
-        spuBo.setSaleable(null);
-        spuBo.setValid(null);
-        spuBo.setCreateTime(null);
-        spuBo.setLastUpdateTime(new Date());
-        spuMapper.updateByPrimaryKeySelective(spuBo);
-        //更新spudetail
-        spuDetailMapper.updateByPrimaryKeySelective(spuBo.getSpuDetail());
 
-
-    }
 
 
     public PageResult<SpuBo> querySpuByPage(String key, Boolean saleable, Integer page, Integer rows) {
@@ -135,5 +147,10 @@ public class GoodsServiceImpl implements  GoodsService {
 
         //封装数据返回
         return new PageResult<SpuBo>(pageInfo.getTotal(),spuBos);
+    }
+
+    @Override
+    public Spu querySpuById(Long id) {
+        return spuMapper.selectByPrimaryKey(id);
     }
 }

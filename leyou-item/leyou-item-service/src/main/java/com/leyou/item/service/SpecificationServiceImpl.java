@@ -32,4 +32,14 @@ public class SpecificationServiceImpl implements  SpecificationService {
         return  paramMapper.select(record);
     }
 
+    @Override
+    public List<SpecGroup> queryGroupsWithParam(Long cid) {
+        List<SpecGroup> groups = querySpecGroup(cid);
+        groups.forEach(group->{
+            List<SpecParam> params = querySpecParam(group.getId(), cid, null, null);
+            group.setParams(params);
+        });
+        return groups;
+    }
+
 }
